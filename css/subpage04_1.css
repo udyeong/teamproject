@@ -1,0 +1,267 @@
+#sec1_posi {
+    position: relative;
+    height: 400px;
+}
+#sec1_img {
+    overflow: hidden;
+    position: absolute;
+    font-size: 0;
+    right: 0;
+    top: 0;
+    z-index: -999999;
+    width: 1500px;
+    height: 100%;
+    background-image: url(../img/header.png);
+}
+
+#sec1_txt {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 30px;
+    padding-right: 100px;
+    background-color: #FF6F1E;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+#sec1_txt>p:first-child {
+    font-size: 40px;
+}
+
+#sec1_txt>p:last-child {
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+#category_wrap {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    background-color: #0B1215;
+    padding: 22px 0;
+    font-size: 22px;
+}
+#category_wrap a{
+    color: #ffffff;
+}
+#category_wrap a:hover{
+    color: #FF6F1E;
+}
+#category_wrap>li:nth-child(2){
+    width: 3px;
+    height: auto;
+    background-color: #ffffff;
+}
+
+
+/* sec1 end */
+
+.w1500{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 75px 0;
+    box-sizing: border-box;
+}
+
+.w1500>section {
+    padding: 75px 0;
+}
+
+
+/* main sec 공통 */
+
+#sec2_wrap{
+    padding-top: 150px;
+    text-align: center;
+    word-break: keep-all;
+}
+#sec2_wrap>p:first-child{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+#sec2_wrap>p:last-child{
+    color: #666666;
+}
+
+/* sec3 end */
+
+.sec36_wrap{
+    align-items: center;
+}
+.sec36_wrap>div>img{
+    width: 300px;
+    height: 425px;
+}
+.sec36_wrap>article{
+    padding-left: 50px;
+    width: 100%;
+}
+.sec36_tit{
+    align-items: baseline;
+}
+.sec36_tit>p:last-child{
+    padding-left: 50px;
+    font-size: 16px;
+    color: #FF6F1E;
+}
+.sec36_sub{
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+.gray{
+    font-size: 16px;
+    color: #666666;
+}
+.sec36_sub ul{
+    display: flex;
+    padding-top: 30px;
+}
+.sec36_sub li{
+    padding-right: 25px;
+    vertical-align: top;
+}
+.sec36_sub img{
+    width: 20px;
+    height: auto; 
+}
+
+/* sec 4567 end */
+
+#sec7_wrap{
+    padding-bottom: 150px;
+}
+.pagination{
+    text-align: center;
+}
+.pagination a {
+    line-height: 16px;
+    font-size: 14px;
+    color: #666666;
+    padding: 12px 18px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.pagination a.paarrow{
+    border: 1.5px solid #FF6F1E;
+    padding: 11px 15px;
+}
+.pahover{
+    background-color: #FF6F1E;
+    color: #ffffff !important;
+}
+
+/* sec7 btn end */
+
+@media screen and (max-width: 1024px){
+    .w1500 {
+        max-width: 824px;
+    }
+
+    #sec1_img{
+        width: 100%;
+    }
+    #sec1_txt>p:first-child {
+        font-size: 20px;
+    }
+    #sec1_txt>p:last-child {
+        font-size: 32px;
+    }
+
+    /* sec1 end */
+    
+    #sec2_wrap>p:first-child{
+        font-size: 28px;
+    }
+    #sec2_wrap>p:last-child{
+        font-size: 18px;
+    }
+
+    /* sec2 end */
+
+    .sec36_wrap>article{
+    padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .w1500 {
+        max-width: 567px;
+        padding: 50px 0;
+    }
+    .w1500>section{
+        padding: 50px 0;
+    }
+
+    #sec2_wrap{
+        padding-top: 100px;
+    }
+
+    .sec36_tit{
+        display: unset;
+        text-align: center;
+    }
+    .sec36_tit>p{
+        padding-bottom: 30px;
+        font-size: 18px;
+    }
+    .sec36_tit>p:last-child{
+        padding-left: 0;
+        font-size: 14px;
+        color: #FF6F1E;
+    }
+    .sec36_sub ul{
+        display: unset;
+    }
+    .sec36_sub>ul:nth-child(2),
+    .sec36_sub>ul:nth-child(3),
+    .sec36_sub>ul:nth-child(4){
+        display: none;
+    }
+    .sec36_sub ul>li{
+        text-align: center;
+        font-size: 14px;
+        padding-right: 0;
+        padding-bottom: 30px;
+        word-break: keep-all;
+    }
+    .home_btn, .home_btn2{
+        margin: 0 auto;
+    }
+    #sec7_wrap{
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .sec36_wrap{
+        flex-direction: column;
+    }
+    .sec36_wrap>article{
+        padding-left: 0;
+    }
+    .sec36_wrap>div>img{
+        height: 350px;
+        padding-bottom: 10px;
+    }
+    .sec36_tit>p{
+        padding-bottom: 15px;
+    }
+    .sec36_sub ul>li{
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #sec1_txt{
+        padding: 30px 10px;
+    }
+    #sec1_txt>p:first-child {
+        font-size: 17px;
+    }
+    #sec1_txt>p:last-child {
+        font-size: 26px;
+    }
+}
