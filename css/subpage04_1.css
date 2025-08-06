@@ -46,13 +46,16 @@
 #category_wrap a{
     color: #ffffff;
 }
-#category_wrap a:hover{
+/* #category_wrap a:hover{
     color: #FF6F1E;
-}
+} */
 #category_wrap>li:nth-child(2){
     width: 3px;
     height: auto;
     background-color: #ffffff;
+}
+#category_wrap li:first-child a{
+    color: #FF6F1E;
 }
 
 
@@ -264,4 +267,5 @@
     #sec1_txt>p:last-child {
         font-size: 26px;
     }
+
 }
